@@ -1,0 +1,10 @@
+<mat-card class="card">
+  <img class="rounded imageStyle" md-card-image src="{{ meme.image }}">
+  <mat-card-content>
+    <h6>{{ meme.title }}</h6>
+  </mat-card-content>
+  <mat-card-actions *ngIf="! hideButtonsControls" fxLayout="row" fxLayoutAlign="end center">
+    <button type="button" class="btn btn-warning" (click)="editMeme()">Edit</button>
+    <button type="button" class="btn btn-danger" (click)="deleteMeme()">Delete</button>
+  </mat-card-actions>
+</mat-card>

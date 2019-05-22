@@ -1,0 +1,43 @@
+section {
+    padding: 10px 0;
+}
+#footer {
+    background: #f8f9fa !important;
+    margin-top: 265px;
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #6c757d;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:black;
+}
+#footer a {
+    color: black;
+    text-decoration: none !important;
+    background-color: transparent;
+}
+#footer ul.resources li{
+	padding: 3px 0;
+}
+#footer ul.resources li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.resources li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.resources li:hover a img {
+    width:30px;
+    height:30px;
+}
+#footer ul.resources li a{
+	color:black;
+}
+#footer ul.resources li a:hover{
+	color:black;
+}

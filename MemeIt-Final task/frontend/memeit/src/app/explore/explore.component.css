@@ -1,0 +1,21 @@
+.memes{
+    display: none;
+}
+input{
+    width: 800px;
+    margin-left: 30px;
+    float: left;
+}
+#searchButton{
+    margin-left: 10px;
+}
+#explore{
+    width: 900px;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+b{
+     cursor: pointer;
+     color: #1E90FF;
+     text-decoration: underline;
+}

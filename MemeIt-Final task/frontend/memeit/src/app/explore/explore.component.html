@@ -1,0 +1,18 @@
+<div>
+  <div class="active-cyan-4 mb-4">
+    <select aria-placeholder="Pick MemeIt" [(ngModel)]="selectedDomain" (change)="getSheredMemes()" id="explore"
+      class="custom-select mr-sm-2">
+      <option value="" disabled selected>Pick MemeIt</option>
+      <option *ngFor="let domain of allDomains">{{domain.name}}</option>
+    </select>
+  </div>
+  <input [(ngModel)]="closestTerm" class="form-control searchMeme" type="text" placeholder="Search" aria-label="Search">
+  <div class="row">
+    <div class="col">
+      <button type="button" id="searchButton" class="btn btn-primary" (click)="findTheClosestMatch()">Search</button>
+      <p *ngIf="! isHideParagraphSuggest">Did you mean <b (click)="getTerm()">{{suggest}}</b>?</p>
+      <p *ngIf="! isHideParagraphAll">Do you want to <b (click)="getAll()">see all</b> memes?</p>
+    </div>
+  </div>
+  <app-meme-list [hideControls]="true" [memes]="currentDomainMemes"></app-meme-list>
+</div>

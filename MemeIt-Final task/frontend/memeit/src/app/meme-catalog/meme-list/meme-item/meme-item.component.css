@@ -1,0 +1,20 @@
+.imageStyle{
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: auto;
+}
+.card{
+    float: left;
+}
+.btn{
+    padding-top: 10px;
+    margin-left: 5px;
+ }
+ h6{
+     padding-top: 10px;
+     text-align: center;
+ }

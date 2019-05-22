@@ -1,0 +1,5 @@
+<mat-grid-list cols="3">
+       <mat-grid-tile *ngFor="let img of memes">
+              <app-meme-item [hideButtonsControls]="hideControls" (deleteCurrentMeme)="buildNewMemes($event)" [meme]="img"></app-meme-item>
+       </mat-grid-tile>
+</mat-grid-list>

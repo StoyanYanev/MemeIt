@@ -1,0 +1,12 @@
+.invalidArguments{
+    color: red;
+    font-weight: bold;
+}
+.form {
+    background-color: #FFEBCD;
+    width: 600px;
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-bottom: 145px;
+    padding: 10px 10px 10px 10px;
+}

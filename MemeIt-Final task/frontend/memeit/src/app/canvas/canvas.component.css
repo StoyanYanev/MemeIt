@@ -1,0 +1,38 @@
+.form {
+    background-color: #FFEBCD;
+    width: 600px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 10px 10px 10px 10px;
+}
+.row{
+    margin-left: 20px;
+}
+.col > input{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+canvas{
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.controls{
+ margin-top: 20px;
+ margin-left: 20px;
+}
+button{
+    margin-left: 10px;
+}
+.invalidArguments{
+    color: red;
+    background-color: #FFEBCD;
+    width: 200px;
+    font-weight: bold;
+    margin: 20px 0px 10px 20px;
+}
+#titleOfMeme{
+    margin: 20px 0px 20px 20px;
+    width: 600px;
+}

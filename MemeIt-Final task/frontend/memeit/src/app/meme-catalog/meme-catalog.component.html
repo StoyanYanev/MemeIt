@@ -1,0 +1,26 @@
+<div>
+  <div class="active-cyan-4 mb-4">
+    <input [(ngModel)]="term" (input)="filteredItems()" class="form-control searchMeme" type="text" placeholder="Search"
+      aria-label="Search">
+  </div>
+  <div class="row">
+    <div class="col">
+      <div ngbDropdown class="d-inline-block">
+        <button class="btn btn-secondary" id="dropdownBasic1" ngbDropdownToggle>Memes per Page:
+          {{ memesPerPage }}</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <button ngbDropdownItem (click)="changeMemesPerPage(6)">6</button>
+          <button ngbDropdownItem (click)="changeMemesPerPage(12)">12</button>
+          <button ngbDropdownItem (click)="changeMemesPerPage(18)">18</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<app-meme-list [hideControls]="false" (memeDelete)="loadNewMemes($event)" [memes]="memes"></app-meme-list>
+<div>
+  <app-pagination (changePage)="changeCurrentPage($event)" [page]="currentPage" [pageSize]="memesPerPage"
+    [collectionSize]="allMemes" [maxSize]="maxSize"></app-pagination>
+</div>
